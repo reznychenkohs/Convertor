@@ -16,8 +16,8 @@ public class Main {
         System.out.println(celsius + " °C = " + fahrenheit + " °F");
 
         System.out.print("Enter temperature in Fahrenheit: ");
-        double fahrenheit = scanner.nextDouble();
-        double celsius = convertFahrenheitToCelsius(fahrenheit);
+        fahrenheit = scanner.nextDouble();
+        celsius = convertFahrenheitToCelsius(fahrenheit);
         System.out.println(fahrenheit + " °F = " + celsius + " °C");
 
         System.out.print("Enter miles: ");
