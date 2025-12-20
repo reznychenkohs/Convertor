@@ -8,6 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Converter project initialized!");
         System.out.println("Version: 1.0");
+        System.out.println("   Description: Simple console app for unit conversion.");
 
         System.out.print("Enter miles: ");
         double miles = scanner.nextDouble();
