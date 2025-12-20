@@ -10,6 +10,11 @@ public class Main {
         System.out.println("Version: 1.0");
         System.out.println("   Description: Simple console app for unit conversion.");
 
+        System.out.print("Enter temperature in Celsius: ");
+        double celsius = scanner.nextDouble();
+        double fahrenheit = convertCelsiusToFahrenheit(celsius);
+        System.out.println(celsius + " °C = " + fahrenheit + " °F");
+
         System.out.print("Enter temperature in Fahrenheit: ");
         double fahrenheit = scanner.nextDouble();
         double celsius = convertFahrenheitToCelsius(fahrenheit);
@@ -25,6 +30,10 @@ public class Main {
         miles = convertKilometersToMiles(kilometers);
         System.out.println(kilometers + " kilometers = " + miles + " miles");
 
+    }
+
+    public static double convertCelsiusToFahrenheit(double celsius) {
+        return (celsius * 9 / 5) + 32;
     }
 
     public static double convertFahrenheitToCelsius(double fahrenheit) {
